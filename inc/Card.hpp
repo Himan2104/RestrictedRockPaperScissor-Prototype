@@ -1,6 +1,7 @@
+#pragma once
 #include<iostream>
 
-enum CardType
+enum class CardType
 {
     Rock,
     Paper,
@@ -13,6 +14,11 @@ public:
     Card();
     Card(unsigned int ID, CardType type);
     ~Card();
+
+
+    unsigned int ID();
+
+    CardType type();
 
     void use();
 

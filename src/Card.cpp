@@ -20,3 +20,18 @@ void Card::use()
 {
     _isUsed = true;
 }
+
+unsigned int Card::ID()
+{
+    return _ID;
+}
+
+CardType Card::type()
+{
+    return _type;
+}
+
+bool Card::isUsed()
+{
+    return _isUsed;
+}
